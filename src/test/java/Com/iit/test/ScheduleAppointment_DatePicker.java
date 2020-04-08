@@ -54,8 +54,8 @@ public class ScheduleAppointment_DatePicker {
 		driver.findElement(By.id("datepicker")).click();
 		while(true)
 		{
-			String text = driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div/div")).getText();
-			if(text.equals(month))
+			String MonthAndYear = driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div/div")).getText();
+			if(MonthAndYear.equals(month))
 			{
 				break;
 			}
